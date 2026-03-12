@@ -229,12 +229,8 @@
     font-size: 18px;
 }
 
-.sub__heading_container span:nth-child(2) {
+.collection_link {
     color: palevioletred;
-    font-size: 13px;
-    cursor: pointer;
-    margin-left: 110px;
-
 }
 
 .sub__heading_container .arrow_icon {
@@ -376,39 +372,31 @@
     color: silver;
 }
 
+
 .localities_and_places {
-    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    background-color: white;
+    transition: all 0.2s ease;
 }
 
 .localities_and_places:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     cursor: pointer;
 }
 
 @media only screen and (max-width:600px) {
-
-    .loc_title {
-        margin-right: 23px;
-    }
-
-    .localities_and_places {
-        height: 180px;
-        width: 95px;
-
-    }
 
     .angle_icon {
         padding-left: 70px;
     }
 }
 
-@media (max-width:900px) {
-    .localities_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width:500px) {
+@media (max-width: 900px) {
     .localities_container {
         grid-template-columns: 1fr;
     }
@@ -420,7 +408,7 @@
     justify-content: center;
     width: 100%;
     padding: 3rem 6rem;
-    margin-top: 160px;
+    margin-top: 40px;
     background-color: snow;
 }
 
@@ -568,7 +556,6 @@
     }
 
     .get__the_app .semiContainer {
-        margin-top: -160px;
         padding: 8px;
         background-color: papayawhip;
         margin-bottom: -50px;
@@ -581,6 +568,12 @@
     .get__the_app_img {
         margin-left: 83px;
     }
+}
+
+.explore_container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
 }
 
 .explore_container p {
@@ -599,6 +592,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .options i {
@@ -606,9 +600,6 @@
 }
 
 @media only screen and (max-width:500px) {
-    .explore_container {
-        margin-left: 34px;
-    }
 
     .explore_container p {
         font-size: 25px;
@@ -633,6 +624,11 @@
     .angle_icon_o4 {
         padding-left: 88px;
     }
+}
+
+.footer {
+    width: 100%;
+    background-color: whitesmoke;
 }
 
 .footer_section1 {
@@ -734,6 +730,7 @@
     .navigation_container {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 @media only screen and (max-width:600px) {
