@@ -208,7 +208,6 @@
 
     .we__offer_card {
         height: 260px;
-        width: 152px;
     }
 }
 
@@ -324,8 +323,7 @@
     }
 
     .collections__card_container .card {
-        height: 175px;
-        min-width: 158px;
+        width: 100%;
     }
 }
 
@@ -605,16 +603,12 @@
         font-size: 25px;
     }
 
-    .options {
-        width: 320px;
-    }
-
     .angle_icon_o1 {
         padding-left: 38px;
     }
 
     .angle_icon_o2 {
-        padding-left: 230px;
+        padding-left: 38px;
     }
 
     .angle_icon_o3 {
